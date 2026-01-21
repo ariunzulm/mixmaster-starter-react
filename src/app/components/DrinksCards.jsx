@@ -1,5 +1,5 @@
 import { useState } from "react";
-import products from "./prodcuts";
+import products from "./drinks";
 import DrinkCard from "./DrinkCard";
 import Navigation from "./Navigation";
 import Search from "./Search";
@@ -9,7 +9,7 @@ export default function DrinksCards() {
   const [searchValue, setSearchValue] = useState("");
 
   const filteredProducts = products.filter((product) => {
-    return product.title.toLowerCase().includes(searchValue.toLowerCase());
+    return product.title.toLowerCase().includes(inputValue.toLowerCase());
   });
 
   const onSearch = () => {
