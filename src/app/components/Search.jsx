@@ -14,7 +14,7 @@ export default function Search({ inputValue, onChange, onSearch }) {
       />
       <button
         onClick={onSearch}
-        className="bg-emerald-500 rounded-sm text-sm py-1.5 px-3 cursir-pointer font-medium text-white"
+        className="bg-emerald-500 rounded-sm text-sm py-1.5 px-3 cursor-pointer font-medium text-white"
       >
         Search
       </button>
